@@ -1,0 +1,35 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: cursive;
+}
+
+#new-todo-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+#list{
+    margin: 1rem; 
+}
+
+.list-item{
+    list-style-type: none;
+}
+
+button{
+    margin-left: 8px ;
+}
+
+input:checked + * , [data-list-item-text]:hover{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 0.2rem;
+}
+
+

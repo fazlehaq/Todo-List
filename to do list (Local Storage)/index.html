@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <ul id="list">
+    </ul>
+
+    <form id="new-todo-form">
+        <label for="todo-input">New Todo</label>
+        <input id="todo-input" type="text">
+        <button id="add-todo" type="submit">Add ToDo</button>
+    </form>
+
+    <template id="list-template-item">
+        <li class="list-item">
+            <label for="" class="list-item-label">
+                <input type="checkbox"   data-list-item-checkbox>
+                <span data-list-item-text></span>
+            </label>
+            <button data-button-delete class="delete-button">Delete</button>
+        </li>
+    </template>
+</body>
+</html>
